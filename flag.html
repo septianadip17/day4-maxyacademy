@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pendaftaran Konferensi</title>
+  <style>
+    /* CSS untuk form */
+    form {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 200px;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* CSS untuk bendera Inggris */
+    .flag {
+      background: linear-gradient(#f00 50%, #fff 50%);
+      background-size: 100% 50%;
+      width: 300px;
+      height: 200px;
+    }
+
+    /* CSS untuk halaman interaktif */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding: 10px;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .popup-button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Form pendaftaran konferensi -->
+  <form>
+    <input type="text" placeholder="Nama">
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Kata Sandi">
+    <input type="submit" value="Daftar">
+  </form>
+
+  <!-- Bendera Inggris -->
+  <div class="flag"></div>
+
+  <!-- Halaman interaktif -->
+  <button onclick="showPopup()">Tampilkan Popup</button>
+  <div id="popup" class="popup">
+    <button onclick="hidePopup()">Tutup</button>
+    <p>Ini adalah halaman interaktif!</p>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function hidePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

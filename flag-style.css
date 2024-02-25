@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/london.jpg);
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back {
+  background: white;
+  height: 250px;
+  width: 500px;
+  border-radius: 5px;
+  animation-name: back;
+  animation-duration: 4s;
+}
+
+@keyframes back {
+  0% {}
+
+  50% {
+    width: 1px;
+  }
+
+  100% {}
+}
+
+.line {
+  background: red;
+  height: 30px;
+  width: 500px;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation-name: line;
+  animation-duration: 4s;
+}
+
+@keyframes line {
+  0% {}
+
+  50% {
+    width: 1px;
+    height: 2px;
+  }
+
+  100% {}
+}
+
+.line2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: red;
+  width: 30px;
+  height: 250px;
+  border-radius: 5px;
+  animation-name: line2;
+  animation-duration: 4s;
+}
+
+@keyframes line2 {
+  0% {}
+
+  50% {
+    width: 180px;
+  }
+
+  100% {}
+}
